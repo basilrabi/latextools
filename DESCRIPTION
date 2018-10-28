@@ -12,7 +12,9 @@ License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0)
-Imports: dplyr (>= 0.7.7)
+Imports:
+  dplyr (>= 0.7.7),
+  hunspell (>= 2.9)
 Suggests: testthat (>= 2.0.1)
 Remotes: r-lib/covr
 RoxygenNote: 6.1.0
