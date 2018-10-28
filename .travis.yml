@@ -1,6 +1,7 @@
 dist: trusty
 language: r
 cache: packages
+sudo: false
 
 r_github_packages:
     - r-lib/covr
