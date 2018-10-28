@@ -2,6 +2,7 @@
 
 export(asDec)
 export(bold)
+export(center)
 export(percent)
 export(place)
 export(pluralize)
