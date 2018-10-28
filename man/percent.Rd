@@ -4,10 +4,12 @@
 \alias{percent}
 \title{Convert to percent}
 \usage{
-percent(x)
+percent(x, latex = TRUE)
 }
 \arguments{
 \item{x}{a number}
+
+\item{latex}{logical value indicating if output is in latex}
 }
 \value{
 a character string
