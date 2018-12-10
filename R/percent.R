@@ -7,12 +7,9 @@
 #' @export percent
 #' @importFrom dplyr "%>%"
 percent <- function(x, latex = TRUE) {
-  if (is.na(x))
-    return(NA)
-
   sep <- " "
   if (latex)
     sep <- "~"
 
-  return(round(x * 100, digits = 2) %>% paste0(sep ,"\\%"))
+  ifelse(is.na(x), NA, (round(x * 100, digits = 2) %>% paste0(sep ,"\\%")))
 }
