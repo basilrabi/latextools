@@ -17,4 +17,4 @@ Imports:
   hunspell (>= 2.9)
 Suggests: testthat (>= 2.0.1)
 Remotes: r-lib/covr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
