@@ -13,5 +13,6 @@ asDec <- function(x, digits = 2L) {
                 nsmall         = digits,
                 small.interval = 3L,
                 small.mark     = " ")
+  out <- ifelse(grepl(pattern = "NA", out), "", out)
   out
 }

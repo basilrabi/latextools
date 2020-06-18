@@ -2,7 +2,7 @@ Package: latextools
 Type: Package
 Title: Formatting Tools for Latex
 Version: 0.1.0
-Date: 2018-12-10
+Date: 2020-06-18
 Authors@R: c(
   person("Basil Eric", "Rabi",
   email = "basil.rabi@tmc.nickelasia.com",
@@ -11,9 +11,9 @@ Description: Various tools for formatting R outputs to latex.
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 Imports:
-  dplyr (>= 0.7.7),
+  dplyr (>= 1.0.0),
   hunspell (>= 2.9)
 Suggests: testthat (>= 2.0.1)
 Remotes: r-lib/covr
