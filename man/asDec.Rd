@@ -2,17 +2,17 @@
 % Please edit documentation in R/asDec.R
 \name{asDec}
 \alias{asDec}
-\title{Convert to formated decimal}
+\title{Convert to formatted decimal}
 \usage{
 asDec(x, digits = 2L)
 }
 \arguments{
-\item{x}{a numeric vector}
+\item{x}{a numeric vector or matrix}
 
 \item{digits}{number of decimal digits to be used}
 }
 \value{
-a character vector of formatted decimals
+a character vector or matrix of formatted decimals
 }
 \description{
 Converts a numeric into pretty decimals
