@@ -2,7 +2,7 @@ Package: latextools
 Type: Package
 Title: Formatting Tools for Latex
 Version: 0.1.0
-Date: 2020-06-18
+Date: 2020-06-23
 Authors@R: c(
   person("Basil Eric", "Rabi",
   email = "basil.rabi@tmc.nickelasia.com",
@@ -14,6 +14,7 @@ LazyData: true
 Depends: R (>= 3.6.0)
 Imports:
   dplyr (>= 1.0.0),
+  english (>= 1.2-5),
   hunspell (>= 2.9)
 Suggests: testthat (>= 2.0.1)
 Remotes: r-lib/covr
