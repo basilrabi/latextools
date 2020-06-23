@@ -24,8 +24,8 @@ asDec <- function(x, digits = 2L) {
 
   if (is.matrix(x)) {
     out <- matrix(data = out,
-                  nrow = length(row_names),
-                  ncol = length(col_names),
+                  nrow = nrow(x),
+                  ncol = ncol(x),
                   dimnames = list(row_names, col_names))
   }
 
