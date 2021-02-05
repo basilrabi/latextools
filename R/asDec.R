@@ -27,6 +27,8 @@ asDec <- function(x, digits = 2L) {
                   nrow = nrow(x),
                   ncol = ncol(x),
                   dimnames = list(row_names, col_names))
+  } else {
+    names(out) <- names(x)
   }
 
   return(out)

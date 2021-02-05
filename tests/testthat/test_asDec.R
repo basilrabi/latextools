@@ -3,7 +3,7 @@ library(latextools)
 
 rate_hauling <- 14.67
 rate_receiving <- 14.00
-km <- c(1.5, 2.0, 2.5, 3.0, 3.5, 4.0)
+km <- c(a = 1.5, b = 2.0, c = 2.5, d= 3.0, e = 3.5, f = 4.0)
 cost <- data.frame(km = km) %>%
   dplyr::mutate(rate_hauling = rate_hauling,
                 cost_receiving = rate_receiving) %>%
@@ -18,5 +18,6 @@ test_that("asDec works",{
   expect_equal(asDec(1000, digits = 5), "1,000.000 00")
   expect_equal(asDec(NA), "")
   expect_equal(asDec(1000, digits = 0), "1,000")
-  expect_equal(cost[,"cost_receiving"], rep("14.00", times = 6))
+  expect_equal(unname(cost[,"cost_receiving"]), rep("14.00", times = 6))
+  expect_equal(names(km), names(asDec(km)))
 })
